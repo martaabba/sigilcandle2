@@ -33,7 +33,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        
       </button>
      
     </div>
@@ -42,12 +42,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Sigil Candles<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Scents</a></li>
-        <li><a href="#">Sizes</a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="#">Scents & Sizes</a></li>
         <li><a href="#">How to Order</a></li>
-        <li><a href="#">Ingredients</a></li>
         <li><a href="#">Science</a></li>
+        <li><a href="#">News</a></li>
         <li><a href="#">About</a></li>
       </ul>
       
@@ -120,13 +118,13 @@ and smells like Christmas in the spring." id="Cinnamon">Cinnamon</a></li>
 My favorite bathroom candle, Ginger and Lemongrass is an ancient smell, immediately familiar and comforting.</p>
                 <li>Eucalyptus</li>
                 <p>The feel better candle. Eucalyptus oil is so powerful that standing over this candle will clear you out like a sauna. 
-This is my most heavily scented candle. Eucalyptus Candles are amazing 
-for turning your bathtub into a steam room, and standing over it does wonders for you when you're sick and just about to head out 
-the door to rehearsal.</p>
+                  This is my most heavily scented candle. Eucalyptus Candles are amazing 
+                  for turning your bathtub into a steam room, and standing over it does wonders for you when you're sick and just about to head out 
+                  the door to rehearsal.</p>
                 <li>Lavender</li>
                 <p>The classic. The oil I buy is very thick and very fragrant and 
-honestly, it doesn't take much to make your whole house smell like lavender. It's a wonderful kitchen candle, as the scent is fresh 
-and complimentary.</p>
+                  honestly, it doesn't take much to make your whole house smell like lavender. It's a wonderful kitchen candle, as the scent is fresh 
+                  and complimentary.</p>
               </ul>
           </div>
         </div>
@@ -164,7 +162,45 @@ and complimentary.</p>
       
       <hr>
       
-      <carousel going here></carousel>
+    <div class="container-fluid">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+                
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/omegagold.jpg" alt="Slide 1">
+                </div>
+                <div class="item">
+                    <img src="img/largesigil.jpg" alt="Slide 2">
+                </div>
+                <div class="item">
+                    <img src="img/omegarock.jpg" alt="Slide 3">
+                </div>
+                <div class="item">
+                    <img src="img/mediumsigil.jpg" alt="Slide 4">
+                </div>
+                <div class="item">
+                    <img src="img/omegawick.jpg" alt="Slide 5">
+                </div>
+                <div class="item">
+                    <img src="img/tinysigil.jpg" alt="Slide 6">
+                </div>
+            </div>
+            <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
       
       <div class="container-fluid">
         <div class="row">
@@ -172,16 +208,38 @@ and complimentary.</p>
             <h2>how to order</h2>
             <p>Tell me the size, qty, and scent</p>
             <h2>why not a shopping cart</h2>
-            <p>This allows me to make candles on demand, control my inventory, and just have a better relationship with customers.  Once/if I become a mega candle producer, this method will change, but for now, expect an invoice from me thru venmo</p>
+            <p>This allows me to make candles on demand, control my inventory, and have a better relationship with customers.  Once/if I become a mega candle producer, this method will change, but for now, expect an invoice from me thru venmo</p>
+            
           </div>
           <div class="col-md-8">
             <h2>Contact Me/Order Submission</h2>
             <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input placeholder="What should I call you?" type="text" id="name" class="form-control">
+                
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input placeholder="This is how I will contact you regarding your order." type="email" id="email" required="required" class="form-control">
+              
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Order/Message</label>
+                <textarea placeholder="To complete your order, I will need to know the size, scent, and quantity of the candle you want to purchase." id="message" required="required" class="form-control" style="resize:none" cols=40 rows="10"></textarea>
+                <button type="submit" class="btn btn-info">Submit</button>
+              </div>
+              
               
             </form>
           </div>
         </div>
       </div>
+      
+      <facebook feed going here></facebook>
+      
+      <about></about>
 
       <footer>
         <p>&copy; phaedrad web design, 2017</p>
